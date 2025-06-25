@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recommendations for {{ search_name }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121212;
+            color: #fff;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .table thead th {
+            background-color: #1f1f1f;
+            color: #00bcd4;
+        }
+        .table tbody tr:hover {
+            background-color: #222;
+        }
+        a {
+            color: #03dac6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="display-5 mb-4">🎥 Recommendations for <span class="text-info">{{ search_name }}</span></h1>
+
+        <table class="table table-dark table-striped table-bordered align-middle">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Movie Title</th>
+                    <th>Release Date</th>
+                    <th>Similarity Score</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in range(movie_names|length) %}
+                <tr>
+                    <td>{{ loop.index }}</td>
+                    <td>{{ movie_names[i] }}</td>
+                    <td>{{ movie_releaseDate[i] }}</td>
+                    <td>{{ movie_simScore[i][1]|round(3) }}</td>
+                    <td>
+                        {% if movie_homepage[i] != '#' %}
+                        <a href="{{ movie_homepage[i] }}" target="_blank">Visit</a>
+                        {% else %}
+                        <span class="text-muted">N/A</span>
+                        {% endif %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <a href="/" class="btn btn-outline-info mt-3">🔙 Search Again</a>
+    </div>
+</body>
+</html>

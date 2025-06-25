@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Not Found</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to right, #141e30, #243b55);
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .card {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 40px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+    .btn-home {
+      background-color: #ffc107;
+      color: #000;
+    }
+    .btn-home:hover {
+      background-color: #e0a800;
+      color: #000;
+    }
+  </style>
+</head>
+<body class="d-flex justify-content-center align-items-center vh-100">
+  <div class="card">
+    <h2 class="text-warning mb-3">Movie Not Found!</h2>
+    <p class="lead">Sorry, we couldn't find "<strong>{{ name }}</strong>".</p>
+    <p>Try searching with a different title.</p>
+    <a href="/" class="btn btn-home mt-3">🔁 Back to Search</a>
+  </div>
+</body>
+</html>
