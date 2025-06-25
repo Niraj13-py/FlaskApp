@@ -1,3 +1,5 @@
+![movie](https://github.com/user-attachments/assets/ff97f81b-901c-4ab2-a467-30934145af8c)
+![Screenshot 2025-06-25 193256](https://github.com/user-attachments/assets/761c7195-0b9f-4171-82bc-afb99842c9e8)
 # 🎬  Movie Recommender (Flask App)
 
 This is a Flask-based web application that recommends similar movies using metadata from TMDb (The Movie Database). It uses **TF-IDF** and **cosine similarity** on combined textual features (like cast, genres, keywords, and director) to find the top 10 similar movies.
@@ -80,15 +82,5 @@ Visit: http://127.0.0.1:8080
 
 
 
-![image](https://github.com/user-attachments/assets/9111a6f2-ea2e-4c1c-86f3-c78428f9cf73)
 
-
-
-
-
-
-
-
-
-![image](https://github.com/user-attachments/assets/f64de916-138b-4708-95c8-07b58bf76161)
 
