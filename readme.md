@@ -74,3 +74,21 @@ Copy
 Edit
 python app.py
 Visit: http://127.0.0.1:8080
+
+
+
+
+
+
+![image](https://github.com/user-attachments/assets/9111a6f2-ea2e-4c1c-86f3-c78428f9cf73)
+
+
+
+
+
+
+
+
+
+![image](https://github.com/user-attachments/assets/f64de916-138b-4708-95c8-07b58bf76161)
+
