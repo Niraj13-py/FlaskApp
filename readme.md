@@ -29,7 +29,10 @@ project/
 ├── templates/
 
 │ ├── index.html
+
+
 │ ├── found.html
+
 │ └── notFound.html
 
 yaml
