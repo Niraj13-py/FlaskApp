@@ -31,9 +31,13 @@ project/
 │ ├── index.html
 
 
+
 │ ├── found.html
 
+
 │ └── notFound.html
+
+
 
 yaml
 Copy
