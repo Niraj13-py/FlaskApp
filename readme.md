@@ -19,10 +19,15 @@ This is a Flask-based web application that recommends similar movies using metad
 ## 📂 Folder Structure
 
 project/
+
 ├── app.py
+
 ├── requirements.txt
+
 ├── README.md
+
 ├── templates/
+
 │ ├── index.html
 │ ├── found.html
 │ └── notFound.html
